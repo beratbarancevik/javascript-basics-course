@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Logical Operators</title>
+    </head>
+    <body>
+        <script>
+            var userInput = prompt("Enter an integer between 0 and 100: ");
+            
+            if(userInput < 0 || userInput > 100){
+                document.write("The input you entered is not between 0 and 100");
+                document.write("<br>");
+            }
+            
+            if(userInput % 2 != 0 && (userInput - 1) % 2 != 0){
+                document.write("The input you entered is not an integer.");
+                document.write("<br>");
+            }
+            
+            else if(userInput > 0 && userInput < 100){
+                document.write("The integer you entered is: " + userInput);
+            }
+            
+        </script>
+    </body>
+</html>
